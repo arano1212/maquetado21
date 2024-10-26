@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -51,16 +52,16 @@ const NavBar = () => {
             gap: "1rem",
           }}
         >
-          <a className="navbar-item" href="#inicio" style={{ color: "white" }}>
+          <Link className="navbar-item" to="/" style={{ color: "white" }}>
             Inicio
-          </a>
-          <a
+          </Link>
+          <Link
             className="navbar-item"
-            href="#portafolio"
+            to="/portfolio"
             style={{ color: "white" }}
           >
             Portafolio
-          </a>
+          </Link>
           <div className="navbar-item has-dropdown is-hoverable">
             <a
               className="navbar-link"
