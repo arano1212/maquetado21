@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ServiceDetails from '@/components/ServiceDetails';
+import ContactForm from '@/components/ContactForm';
 
 const NavBar = () => {
   const [isActive, setIsActive] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsActive(!isActive);
@@ -15,7 +17,11 @@ const NavBar = () => {
   };
 
   const handleCloseDetails = () => {
-    setSelectedService(null); 
+    setSelectedService(null);
+  };
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
   };
 
   const services = [
@@ -59,7 +65,6 @@ const NavBar = () => {
             <span aria-hidden="true"></span>
           </div>
         </div>
-
         <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
           <div
             className="navbar-start"
@@ -104,7 +109,6 @@ const NavBar = () => {
               Acerca de
             </Link>
           </div>
-
           <div className="navbar-end" style={{ alignItems: "center" }}>
             <div className="navbar-item">
               <button
@@ -121,6 +125,7 @@ const NavBar = () => {
                 onMouseLeave={(e) =>
                   (e.target.style.backgroundColor = "#00d1b2")
                 }
+                onClick={toggleModal}
               >
                 Contacta
               </button>
@@ -128,9 +133,22 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-
       {selectedService && (
         <ServiceDetails service={selectedService} onClose={handleCloseDetails} />
+      )}
+      {isModalOpen && (
+        <div className="modal is-active">
+          <div className="modal-background" onClick={toggleModal}></div>
+          <div className="modal-card" style={{ maxWidth: '500px', margin: 'auto' }}>
+            <header className="modal-card-head">
+              <p className="modal-card-title">Contacto</p>
+              <button className="delete" aria-label="close" onClick={toggleModal}></button>
+            </header>
+            <section className="modal-card-body">
+              <ContactForm />
+            </section>
+          </div>
+        </div>
       )}
     </>
   );
