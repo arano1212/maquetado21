@@ -35,9 +35,9 @@ const NavBar = () => {
         }}
       >
         <div className="navbar-brand">
-          <a
+          <Link
             className="navbar-item"
-            href="#cehache"
+            to="/"
             style={{ fontWeight: "bold", color: "white" }}
           >
             CE
@@ -45,7 +45,7 @@ const NavBar = () => {
             HACHE
             <br />
             ESTUDIO
-          </a>
+          </Link>
           <div
             role="button"
             className={`navbar-burger ${isActive ? "is-active" : ""}`}
@@ -100,9 +100,9 @@ const NavBar = () => {
                 ))}
               </div>
             </div>
-            <a className="navbar-item" href="#acerca" style={{ color: "white" }}>
+            <Link className="navbar-item" to="/aboutus" style={{ color: "white" }}>
               Acerca de
-            </a>
+            </Link>
           </div>
 
           <div className="navbar-end" style={{ alignItems: "center" }}>

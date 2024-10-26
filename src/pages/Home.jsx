@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageBanner from '@/components/ImageBanner';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -185,10 +186,10 @@ const Home = () => {
               <br/><br/><br/>
             </div>
             <div className="column is-4">
-              <a href="#" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Inicio</a>
-              <a href="#" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Portafolio</a>
-              <a href="#" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Servicios</a>
-              <a href="#" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Nosotros</a>
+              <Link to="/" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Inicio</Link>
+              <Link to="/portfolio" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Portafolio</Link>
+              <Link to="/services" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Servicios</Link>
+              <Link to="/aboutus" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Acerca de</Link>
             </div>
             <div className="column is-4" style={{ textAlign: 'right' }}>
               <button className="button is-primary">Comencemos</button>
