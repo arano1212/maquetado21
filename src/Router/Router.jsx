@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, Portfolio } from "../pages";
+import { Home, Portfolio, Services } from "../pages";
 
 
 const RouterIndex = () => {
@@ -8,6 +8,7 @@ const RouterIndex = () => {
     <Routes>
         <Route path="/" element={<Home/>}  />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/services" element={<Services />} />
     </Routes>
     </>
   )
