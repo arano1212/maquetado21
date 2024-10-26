@@ -6,14 +6,19 @@ const Home = () => {
   return (
     <>
       <ImageBanner />
-      <br />
-      <br />
-      <br/><br/><br/>
+    
       <div
         style={{
           maxWidth: '100vw',
           margin: '0 auto',
           padding: '0 20px',
+          backgroundColor: 'black',  // Fondo negro
+          color: 'white',  // Texto blanco
+          fontFamily: 'psf4mfq, sans-serif', // Fuente
+          paddingTop: '12rem',  // Espaciado superior
+          paddingBottom: '2rem', // Espaciado inferior
+          boxSizing: 'border-box',
+          overflow: 'hidden', // Asegurarse que no haya scrollbars
         }}
       >
         <div
@@ -34,7 +39,7 @@ const Home = () => {
           <h2
             className="title is-3"
             style={{
-              fontFamily: 'psf4mfq, serif', 
+              fontFamily: 'psf4mfq, serif',
               fontSize: '2.5rem',
             }}
           >
@@ -74,7 +79,6 @@ const Home = () => {
             sólida presencia visual y estrategias.
           </p>
         </div>
-        
         <br/><br/><br/>
         <div
           className="has-text-centered"
@@ -95,7 +99,6 @@ const Home = () => {
             satisfagan las necesidades específicas de nuestros clientes.
           </p>
         </div>
-        
         <br/><br/><br/>
         <div
           className="has-text-centered"
@@ -117,7 +120,6 @@ const Home = () => {
             y marketing digital, utilizando tecnología de vanguardia.
           </p>
         </div>
-        
         <br/><br/><br/>
         <div
           className="has-text-centered"
@@ -138,7 +140,6 @@ const Home = () => {
             satisfagan las necesidades específicas de nuestros clientes.
           </p>
         </div>
-    
         <br/><br/><br/>
         <div
           className="has-text-centered"
@@ -162,7 +163,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <br/><br/><br/><br/><br/><br/>
+    
       <footer
         className="footer has-text-centered"
         style={{
@@ -172,14 +173,14 @@ const Home = () => {
           width: '100%',
           border: 'none',
           boxShadow: 'none',
-          fontFamily: 'psf4mfq, sans-serif', 
+          fontFamily: 'psf4mfq, sans-serif',
         }}
       >
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column is-4">
               <h2 style={{ fontSize: '2.5rem', fontFamily: 'psf4mfq, serif', color: '#fff' }}>
-              <br/>
+                <br />
                 DESCUBRE EL VALOR<br />
                 DE TU NEGOCIO
               </h2>
@@ -194,7 +195,7 @@ const Home = () => {
             <div className="column is-4" style={{ textAlign: 'right' }}>
               <button className="button is-primary">Comencemos</button>
               <p style={{ color: '#fff', fontSize: '1.2rem', fontFamily: 'psf4mfq, serif' }}>
-              <br/><br/>
+                <br /><br />
                 CE <br />
                 HACHE<br />
                 ESTUDIO
@@ -203,8 +204,8 @@ const Home = () => {
           </div>
           <div className="columns">
             <div className="column is-12" style={{ textAlign: 'center', fontSize: '0.8rem', color: '#fff' }}>
-              <a href="#" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Políticas de privacidad</a><br/>
-              <a href="#" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Términos y condiciones</a><br/>
+              <a href="#" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Políticas de privacidad</a><br />
+              <a href="#" style={{ color: '#fff', textDecoration: 'none', marginRight: '10px' }}>Términos y condiciones</a><br />
               <p>Derechos Reservados CE HACHE ESTUDIO 2024</p>
             </div>
           </div>

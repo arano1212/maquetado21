@@ -25,11 +25,15 @@ const Portfolio = () => {
           marginTop: "5rem",
           textAlign: "center",
           fontFamily: "psf4mfq, sans-serif",
+          backgroundColor: "black", // Fondo oscuro
+          color: "white", // Texto blanco
+          minHeight: "100vh", // Para que el fondo cubra toda la pantalla
+          margin: '0', // Asegúrate de que no haya márgenes
+          paddingTop: '0', // Asegúrate de que no haya padding arriba
         }}
       >
         <br />
         <br />
-
         <div className="columns is-multiline is-centered" style={{ marginTop: "2rem" }}>
           {projects.map((project) => (
             <div className="column is-4" key={project.id}>
@@ -44,15 +48,13 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-
       {selectedProject && <CarDetails project={selectedProject} onClose={handleCloseDetails} />}
-
       <footer
         className="footer has-text-centered"
         style={{
-          backgroundColor: 'transparent',
+          backgroundColor: 'black', // Fondo oscuro
           padding: '2rem 0',
-          color: 'white',
+          color: 'white', // Texto blanco
           width: '100%',
           border: 'none',
           boxShadow: 'none',
@@ -72,7 +74,6 @@ const Portfolio = () => {
                 Derechos Reservados CE HACHE ESTUDIO 2024
               </p>
             </div>
-
             <div className="column is-4" style={{ textAlign: 'right' }}>
               <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '15px' }}>
                 <a
