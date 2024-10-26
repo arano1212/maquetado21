@@ -22,7 +22,7 @@ const Portfolio = () => {
       <div
         style={{
           padding: "2rem",
-          marginTop: "5rem", // Espacio entre Navbar y portafolio
+          marginTop: "5rem",
           textAlign: "center",
           fontFamily: "psf4mfq, sans-serif",
         }}

@@ -38,28 +38,26 @@ const ImageBanner = () => {
       >
         PROVOCA MIRADAS,<br /> QUE HABLEN DE TI
       </div>
-      {/* Texto corto en la esquina inferior derecha */}
       <div
         style={{
           position: "absolute",
           bottom: "20px",
           right: "20px",
           color: "white",
-          background: "rgba(0, 0, 0, 0.5)", // Fondo semitransparente para legibilidad
+          background: "rgba(0, 0, 0, 0.5)",
           padding: "10px",
           borderRadius: "5px",
         }}
       >
         Lorem ipsum dolor sit amet.
       </div>
-      {/* Iconos en la esquina inferior izquierda */}
       <div
         style={{
           position: "absolute",
           bottom: "20px",
           left: "20px",
           display: "flex",
-          gap: "10px", // Espaciado entre iconos
+          gap: "10px",
         }}
       >
         <a href="#" style={{ color: "white", fontSize: "1.5rem" }}>
